@@ -20,5 +20,15 @@ pipeline{
                 sh 'bash -x claudi.sh'
             }
         }
+
+        stage('3-third name'){
+            steps{
+                echo "My name is abbey"
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+                sh 'sudo chmod +x abbey.sh'
+                sh 'bash -x abbey.sh'
+            }
+        }
     }
 }
