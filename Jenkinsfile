@@ -11,5 +11,14 @@ pipeline{
             }   
            
         }
+        stage('2-second name'){
+            steps{
+                echo "My name is Claudi-ann"
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+                sh 'sudo chmod +x claudi.sh'
+                sh 'bash -x claudi.sh'
+            }
+        }
     }
 }
