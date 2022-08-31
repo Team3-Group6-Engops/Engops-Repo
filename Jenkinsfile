@@ -20,6 +20,7 @@ pipeline{
                 sh 'bash -x claudi.sh'
             }
         }
+
         stage('3-third name'){
             steps{
                 echo "My name is abbey"
