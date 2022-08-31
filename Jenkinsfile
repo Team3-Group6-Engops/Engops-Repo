@@ -11,5 +11,23 @@ pipeline{
             }   
            
         }
+        stage('2-second name'){
+            steps{
+                echo "My name is Claudi-ann"
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+                sh 'sudo chmod +x claudi.sh'
+                sh 'bash -x claudi.sh'
+            }
+        }
+        stage('3-third name'){
+            steps{
+                echo "My name is abbey"
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+                sh 'sudo chmod +x abbey.sh'
+                sh 'bash -x abbey.sh'
+            }
+        }
     }
 }
