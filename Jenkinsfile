@@ -39,5 +39,14 @@ pipeline{
                 sh 'bash -x lateef.sh'
             }
         }
+        stage('5-fifth name'){
+            step{
+                echo "my name is Annick"
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+                sh 'sudo chmod +x annick.sh'
+                sh 'bash -x annick.sh'
+            }
+        }
     }
 }
