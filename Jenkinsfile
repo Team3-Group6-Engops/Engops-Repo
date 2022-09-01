@@ -33,7 +33,7 @@ pipeline{
         stage('4-fourth name'){
             steps{
                 echo "my name is Lateef"
-                sh 'ps-ef'
+                sh 'ps -ef'
                 sh 'sudo systemctl status jenkins'
                 sh 'sudo chmod +x lateef.sh'
                 sh 'bash -x lateef.sh'
