@@ -36,7 +36,7 @@ pipeline{
                 echo "My name is lateef"
                 sh 'ps -ef'
                 sh 'sudo systemctl status jenkins'
-                sh 'sudo chmod +x lateef..sh'
+                sh 'sudo chmod +x lateef.sh'
                 sh 'bash -x lateef.sh'
     }
 }
