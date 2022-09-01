@@ -30,13 +30,14 @@ pipeline{
                 sh 'bash -x abbey.sh'
             }
         }
-        
-        stage('4- fourth name'){
+        stage('4-fourth name'){
             steps{
-                echo "My name is lateef"
-                sh 'ps -ef'
+                echo "my name is Lateef"
+                sh 'ps-ef'
                 sh 'sudo systemctl status jenkins'
                 sh 'sudo chmod +x lateef.sh'
                 sh 'bash -x lateef.sh'
+            }
+        }
     }
 }
