@@ -1,12 +1,6 @@
 pipeline{
     agent any
     stages{
-        stage('cloning'){
-            steps{
-            checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkinsgit', url: 'https://github.com/Team3-Group6-Engops/Engops-Repo.git']]])    
-            
-            }
-        }
         stage('1-my name'){
             steps{
                 echo "My name is Abayomi"
@@ -43,6 +37,24 @@ pipeline{
                 sh 'sudo systemctl status jenkins'
                 sh 'sudo chmod +x lateef.sh'
                 sh 'bash -x lateef.sh'
+            }
+        }
+        stage('5-fifth name'){
+            step{
+                echo "my name is Annick"
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+                sh 'sudo chmod +x annick.sh'
+                sh 'bash -x annick.sh'
+            }
+        }
+        stage('6-sixth name'){
+            step{
+                echo "My name is Frank"
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+                sh 'sudo chmod +x frank.sh'
+                sh 'bash -x frank.sh'
             }
         }
     }
