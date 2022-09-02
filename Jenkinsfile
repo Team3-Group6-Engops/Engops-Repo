@@ -1,7 +1,6 @@
 pipeline{
     agent any
-    checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkinsgit', url: 'https://github.com/Team3-Group6-Engops/Engops-Repo.git']]])
-    stages{
+    checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkinsgit', url: 'https://github.com/Team3-Group6-Engops/Engops-Repo.git']]])    stages{
         stage('1-my name'){
             steps{
                 echo "My name is Abayomi"
