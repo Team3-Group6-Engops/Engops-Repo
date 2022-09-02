@@ -1,6 +1,12 @@
 pipeline{
     agent any
-    checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkinsgit', url: 'https://github.com/Team3-Group6-Engops/Engops-Repo.git']]])    stages{
+    stages{
+        stage('cloning'){
+            steps{
+            checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkinsgit', url: 'https://github.com/Team3-Group6-Engops/Engops-Repo.git']]])    
+            
+            }
+        }
         stage('1-my name'){
             steps{
                 echo "My name is Abayomi"
