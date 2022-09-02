@@ -40,12 +40,21 @@ pipeline{
             }
         }
         stage('5-fifth name'){
-            step{
+            steps{
                 echo "my name is Annick"
                 sh 'ps -ef'
                 sh 'sudo systemctl status jenkins'
                 sh 'sudo chmod +x annick.sh'
                 sh 'bash -x annick.sh'
+            }
+        }
+        stage('6-sixth name'){
+            steps{
+                echo "My name is Frank"
+                sh 'ps -ef'
+                sh 'sudo systemctl status jenkins'
+                sh 'sudo chmod +x frank.sh'
+                sh 'bash -x frank.sh'
             }
         }
     }
