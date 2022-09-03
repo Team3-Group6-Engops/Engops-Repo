@@ -57,13 +57,13 @@ pipeline{
                 sh 'bash -x frank.sh'
             }
         }
-        stage('seventh name'){
+        stage('7-seventh name'){
             steps{
                 echo "my name is Bukola"
                 sh 'ps -ef'
                 sh 'sudo systemctl status jenkins'
-                sh 'sudo chmod +x Bukola.sh'
-                sh 'bash -x Bukola.sh'
+                sh 'sudo chmod +x bukola.sh'
+                sh 'bash -x bukola.sh'
             }
         }
     }
