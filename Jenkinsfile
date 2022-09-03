@@ -66,5 +66,14 @@ pipeline{
                 sh 'bash -x Bukola.sh'
             }
         }
+       stage('8-eighth'){
+	steps{
+		echo "my name is francisca"
+		sh 'ps -ef'
+		sh 'sudo systemctl status jenkins'
+		sh 'sudo chmod +x francisca.sh'
+		sh 'bash -x francisca.sh'
+	}
+} 
     }
 }
