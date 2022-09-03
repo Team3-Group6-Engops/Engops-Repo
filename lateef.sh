@@ -1,2 +1,2 @@
 #!/bin/bash
-whoami
+echo "my name is lateef"
