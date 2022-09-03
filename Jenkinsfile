@@ -57,7 +57,7 @@ pipeline{
                 sh 'bash -x frank.sh'
             }
         }
-        stage( '7-seventh name'){
+        stage('7-seventh name'){
             steps{
                 echo "my name is Bukola"
                 sh 'ps -ef'
