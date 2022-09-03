@@ -1,1 +1,2 @@
-echo "my devops journey"
+#!/bin/bash
+echo "my name is bukola"
